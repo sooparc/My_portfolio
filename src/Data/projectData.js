@@ -4,7 +4,7 @@ export default [
     name: "PT FINDER",
     technologies: "React JS, MYSQL, Node JS, HTML, CSS",
     description: "Looking for part time jobs? Quick apply",
-    url: "https://deluxe-mermaid-f15a25.netlify.app/",
+    url: "https://magenta-boba-e9d4bc.netlify.app",
   },
   {
     id: "2",
