@@ -31,13 +31,12 @@
   height: 100px;
   object-fit: cover;
   border-radius: 100%;
-  margin-top: 20vh;
+  margin-top: 15vh;
   margin-bottom: 35px;
 }
 
 .introductionTitle {
   font-size: 28px;
-  font-weight: 800;
   letter-spacing: 1px;
   color: #fff;
 }
@@ -49,56 +48,78 @@
 }
 
 .introductionContent {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 1px;
   line-height: 1.8;
   color: #ccc;
 }
 
+.iconContainer {
+  margin-top: 150px;
+  margin-right: 10px;
+}
+
 .icon {
-  color: #fff;
+  color: #ccc;
   display: inline-block;
-  margin-right: 20px;
+  margin-left: 27px;
   margin-top: 60px;
-  font-size: 30px;
+  font-size: 27px;
 }
 
 .icon:hover {
-  color: #ccc;
+  color: #fff;
   transition: 0.3s;
 }
 
+.copyright {
+  margin-top: 20px;
+  color: #ccc;
+  font-size: 12px;
+}
+
 /* Right page */
+.resumeDownload {
+  margin-top: 2vh;
+  text-align: end;
+  margin-right: 20px;
+}
+
+.resumeLink {
+  color: #858585;
+  text-decoration: none;
+}
+
+.resumeLink:hover {
+  color: #858585;
+}
 
 .mainTitle {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 18vh;
-  font-size: 40px;
-  font-family: "Merriweather", serif;
-  font-style: italic;
-  font-size: 40px;
+  margin-top: 10vh;
+  font-size: 25px;
+  font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 2px;
-  -webkit-text-stroke: 0.8px #858585;
-  margin-bottom: 50px;
+  color: #858585;
+  margin-bottom: 60px;
+  text-align: left;
+  margin-left: 80px;
 }
 
 .mainContent {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
+  width: 80%;
   color: #858585;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1px;
-  line-height: 1.6;
+  line-height: 2;
+  text-align: left;
+  margin-left: 80px;
 }
 
 .divider {
   width: 80%;
   margin-top: 70px;
+  margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
   color: #858585;
@@ -109,14 +130,14 @@
 }
 
 .projectTitle {
-  font-family: "Merriweather", serif;
-  font-style: italic;
-  font-size: 40px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 25px;
   letter-spacing: 2px;
-  color: white;
-  -webkit-text-stroke: 0.8px #858585;
+  color: #858585;
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 90px;
 }
 
 .card {
@@ -124,10 +145,21 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 0.5s ease;
+}
+
+.card:hover {
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 0.5s ease;
 }
 
 .cardTitle {
-  margin-top: 10px;
+  margin-top: 5px;
   letter-spacing: 1px;
   font-size: 18px;
 }
@@ -146,36 +178,21 @@
   font-size: 15px;
 }
 
-.skillTitle {
-  font-family: "Merriweather", serif;
-  font-style: italic;
-  font-size: 40px;
-  letter-spacing: 2px;
-  color: white;
-  -webkit-text-stroke: 0.8px #858585;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.skills {
-  background-color: #f1f1f1;
-  padding: 80px 0px;
-}
-
 .skill {
   width: 100px;
   height: 100px;
-  border-radius: 100%;
   object-fit: cover;
+  border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 1px solid #fff;
-  padding: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 0 8px 8px #eeeeee;
+  padding: 3px;
 }
 
 .skill:hover {
-  border: 1px solid #858585;
-  transform: scale(1.1);
+  box-shadow: 0 8px 8px #ccc;
   transition: 0.5s;
 }
 
@@ -217,28 +234,48 @@
   }
 
   .icon {
-    font-size: 30px;
+    font-size: 25px;
     margin-right: 15px;
     margin-left: 15px;
     margin-bottom: 35px;
+  }
+
+  .iconContainer {
+    margin-top: 50px;
+  }
+
+  .copyright {
+    padding-bottom: 30px;
   }
 
   .rightContainer {
     width: 100%;
   }
 
+  .resumeLink {
+    font-size: 14px;
+  }
+
   .mainTitle {
     font-size: 28px;
+    margin-top: 12vh;
     letter-spacing: 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .mainContent {
-    width: 85%;
     font-size: 12px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .projectTitle {
-    font-size: 28px;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 0px;
   }
 
   .cardTitle {
@@ -250,7 +287,15 @@
   }
 
   .skill {
-    width: 120px;
-    height: 120px;
+    width: 55px;
+    height: 55px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainContent {
+    font-size: 10px;
   }
 }
