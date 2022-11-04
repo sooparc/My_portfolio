@@ -4,7 +4,7 @@ export default [
     name: "SIMPLE JOBS",
     technologies: "React JS, MYSQL, Node JS, HTML, CSS",
     description: "Looking for part time jobs? Quick apply",
-    url: "https://thriving-gnome-8f51ab.netlify.app/",
+    url: "https://simplejobs.netlify.app",
   },
   {
     id: "2",
