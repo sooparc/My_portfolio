@@ -94,7 +94,7 @@ const Home = () => {
             websites with{" "}
             <strong>
               JavaScript | React.js | TypeScript | jQuery | Node.js | MongoDB |
-              MySQL
+              MySQL | Figma
             </strong>{" "}
             and other libraries and frameworks. I enjoy learning and applying
             new technologies into my applications. I believe incorporating new
