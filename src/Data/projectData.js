@@ -1,5 +1,12 @@
 export default [
   {
+    id: "0",
+    name: "MEDICLO",
+    technologies: "Javascript, jQuery, Liquid, HTML, CSS",
+    description: "",
+    url: "https://mediclo.com",
+  },
+  {
     id: "1",
     name: "SIMPLE JOBS",
     technologies: "React JS, MYSQL, Node JS, HTML, CSS",
@@ -33,12 +40,5 @@ export default [
     technologies: "React JS, Firebase, HTML, CSS",
     description: "Try ordering delicious and afforable pizza",
     url: "https://pizzaordering-app.web.app",
-  },
-  {
-    id: "6",
-    name: "ALL RECIPES",
-    technologies: "EJS, Node JS, Mongo DB, HTML, CSS",
-    description: "Find meals for your ingredients",
-    url: "https://calm-reaches-31420.herokuapp.com/",
   },
 ];

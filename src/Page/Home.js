@@ -6,12 +6,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Card } from "react-bootstrap";
+import projectImg0 from "../Assets/Mediclo.png";
 import projectImg1 from "../Assets/Simplejobs.png";
 import projectImg2 from "../Assets/AmazingBreweries.png";
 import projectImg3 from "../Assets/IdealType-app.png";
 import projectImg4 from "../Assets/UnionNailSalon.png";
 import projectImg5 from "../Assets/pizzaOrdering-app.png";
-import projectImg6 from "../Assets/Recipe-app.png";
 import skill1 from "../Assets/javascript.png";
 import skill2 from "../Assets/html.jpg";
 import skill3 from "../Assets/css.png";
@@ -23,7 +23,7 @@ import skill8 from "../Assets/firebase.png";
 import skill9 from "../Assets/nodejs.png";
 import skill10 from "../Assets/mongodb.jpg";
 
-import pdf from "../Assets/Soojin_Park_Resume.pdf";
+import pdf from "../Assets/Soojin_park_resume.pdf";
 
 const Home = () => {
   const githubIcon = <FontAwesomeIcon icon={faGithub} />;
@@ -32,12 +32,12 @@ const Home = () => {
   const downloadIcon = <FontAwesomeIcon icon={faFileArrowDown} />;
 
   let picArr = [
+    projectImg0,
     projectImg1,
     projectImg2,
     projectImg3,
     projectImg4,
     projectImg5,
-    projectImg6,
   ];
 
   let skillArr = [skill1, skill2, skill3, skill4, skill5];
@@ -52,7 +52,7 @@ const Home = () => {
           <div className={classes.introductionTitle}>Hello! I'm Soo Park</div>
           <div className={classes.introductionContent}>
             <br /> I'm a<span> </span>
-            <div className={classes.highlight}>Full Stack Developer</div> living
+            <div className={classes.highlight}>Full Stack Web Developer</div> living
             in Los Angeles
             <br /> I enjoy building creative & functional websites
           </div>
@@ -74,7 +74,7 @@ const Home = () => {
               {downloadIcon}
             </a>
             <div className={classes.copyright}>
-              &copy; 2022 SOOJIN PARK | Full Stack Developer
+              &copy; 2024 SOOJIN PARK | Full Stack Web Developer
             </div>
           </div>
         </div>
@@ -90,17 +90,16 @@ const Home = () => {
           </div>
           <div className={classes.mainTitle}>About me</div>
           <div className={classes.mainContent}>
-            A passionate Full Stack Developer having an experience of building
-            websites with{" "}
+            Full Stack Web Developer with 2.5 years of experience in building
+            dynamic websites and applications using a variety of technologies, including{" "}
             <strong>
-              JavaScript | React.js | TypeScript | jQuery | Node.js | MongoDB |
-              MySQL | Figma
+              React.js | JavaScript | jQuery | Node.js | MongoDB |
+              MySQL | Liquid | Figma
             </strong>{" "}
-            and other libraries and frameworks. I enjoy learning and applying
-            new technologies into my applications. I believe incorporating new
-            ideas and collaborating with different people will lead to new
-            heights and understanding. Please feel free to contact me by{" "}
-            <a href="mailto:soozin@gmail.com">email</a> or ping me on{" "}
+            Skilled in both front-end and back-end development,
+            with a passion for learning and intergrating new tools and frameworks. 
+            Please feel free to contact me by{" "}
+            <a href="mailto:soozin95@gmail.com">email</a> or ping me on{" "}
             <span> </span>
             <a href="https://www.linkedin.com/in/soojin-park-6bb373141/">
               Linkedin
@@ -148,7 +147,7 @@ const Home = () => {
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
           <div className={classes.footer}>
-            <p className="text-end mt-3 text-muted">&copy; 2022 SOOJIN PARK</p>
+            <p className="text-end mt-3 text-muted">&copy; 2024 SOOJIN PARK</p>
           </div>
         </div>
       </div>
