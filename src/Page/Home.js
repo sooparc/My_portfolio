@@ -90,7 +90,7 @@ const Home = () => {
           </div>
           <div className={classes.mainTitle}>About me</div>
           <div className={classes.mainContent}>
-            Full Stack Web Developer with 2.5 years of experience in building
+            Full Stack Web Developer with 3 years of experience in building
             dynamic websites and applications using a variety of technologies, including{" "}
             <strong>
               React.js | JavaScript | jQuery | Node.js | MongoDB |
