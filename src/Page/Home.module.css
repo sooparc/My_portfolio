@@ -1,68 +1,87 @@
+/* ========== Global ========== */
+
+:root {
+  --primary: #282828;
+  --muted: #858585;
+}
+
 .container {
   font-family: "Poppins", sans-serif;
   width: 100%;
 }
 
-/* Left side */
+/* ========== Left Side ========== */
 .leftContainer {
   background-image: url(../Assets/backgroundLeft.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: center;
   width: 38%;
   height: 100%;
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+  z-index: 1;
+}
+
+.leftContainer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
 }
 
 .leftContent {
+  position: relative;
   text-align: end;
-  margin-right: 30px;
+  z-index: 2;
 }
 
 .profileImg {
   width: 100px;
   height: 100px;
   object-fit: cover;
-  border-radius: 100%;
-  margin-top: 15vh;
+  border-radius: 50%;
   margin-bottom: 35px;
+  border: 2px solid #fff;
 }
 
 .introductionTitle {
   font-size: 28px;
-  letter-spacing: 1px;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .introductionContent {
-  font-size: 16px;
-  font-weight: 800;
-  letter-spacing: 1px;
+  font-size: 14px;
+  letter-spacing: 0.4px;
   line-height: 1.8;
   color: #ccc;
 }
 
 .introductionContent span {
   color: #fff;
+  font-weight: 500;
 }
 
 .iconContainer {
-  margin-top: 150px;
   margin-right: 10px;
 }
 
 .icon {
   color: #ccc;
   display: inline-block;
-  margin-left: 27px;
-  margin-top: 60px;
-  font-size: 27px;
+  margin-top: 50px;
+  margin-left: 25px;
+  font-size: 25px;
+  transition: color 0.3s ease;
 }
 
 .icon:hover {
   color: #fff;
-  transition: 0.3s;
 }
 
 .copyright {
@@ -71,13 +90,13 @@
   font-size: 12px;
 }
 
-/* Right side */
+
+/* ========== Right Side ========== */
 .rightContainer {
   width: 62%;
   height: 100%;
   position: relative;
   float: right;
-  overflow-y: scroll;
   padding-inline: 80px;
 }
 
@@ -87,8 +106,9 @@
 }
 
 .resumeLink {
-  color: #858585;
+  color: var(--muted);
   text-decoration: none;
+  font-size: 14px;
 }
 
 .resumeLink:hover {
@@ -96,10 +116,11 @@
   text-decoration: none;
 }
 
+/* ========== Content Section ========== */
 .contentContainer {
   display: grid;
-  text-align: left;
   gap: 30px;
+  text-align: left;
 }
 
 .contentHeading {
@@ -110,23 +131,27 @@
 }
 
 .contentText {
-  width: 80%;
-  color: #858585;
+  color: var(--muted);
   font-size: 14px;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
   line-height: 2;
 }
 
 .divider {
   margin: 50px 0;
-  color: #858585;
+  color: var(--muted);
 }
 
+/* ========== Work Section ========== */
 .workContainer {
   display: flex;
   align-items: center;
-  gap: 20px; 
-  margin: 20px 0;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.workContainer a {
+  text-decoration: none;
 }
 
 .workImgContainer img {
@@ -137,35 +162,69 @@
 .workImgContainer,
 .workTextContainer {
   flex: 1;
-  color: #858585; 
-  align-items: center;
+  color: var(--muted);
 }
 
 .workHeading {
+  font-size: 18px;
   padding-left: 1rem;
   color: #282828;
 }
 
 .customBullets {
-  padding-left: 30px; 
+  padding-left: 30px;
   font-size: 14px;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
   line-height: 2;
 }
 
 .customBullets li::marker {
   font-size: 0.6em;
-  color: #858585;
+  color: var(--muted);
+}
+
+/* ========== Projects Section ========== */
+.cardContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+}
+
+.cardContentContainer {
+  background-color: var(--white);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardContentContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.cardImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cardBody {
+  padding: 16px;
+  display: grid;
+  gap: 5px;
 }
 
 .cardTitle {
-  margin-top: 5px;
-  letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  margin-bottom: 4px;
 }
 
 .cardTitle a {
-  color: #000;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -174,39 +233,49 @@
 }
 
 .technologies {
-  color: #858585;
-  font-size: 15px;
+  color: var(--muted);
+  font-size: 14px;
 }
 
+/* ========== Footer ========== */
 .footer {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  font-size: 12px;
 }
 
-@media (max-width: 967px) {
-  .leftContainer {
+/* ========== Responsive ========== */
+@media (max-width: 1024px) {
+ .leftContainer {
     width: 100%;
+    height: auto;
     position: relative;
+    padding: 60px 0;
   }
 
   .leftContent {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 
-  .profileImg {
-    margin-top: 10vh;
+  .introductionTitle {
+    font-size: 22px;
+  }
+
+  .introductionContent {
+    width: 90%;
+    font-size: 12px;
+    margin: 0 auto;
   }
 
   .icon {
-    font-size: 25px;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 35px;
+    font-size: 22px;
+    margin: 20px 10px 10px;
   }
 
   .iconContainer {
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-right: 0;
+    text-align: center;
   }
 
   .copyright {
@@ -215,23 +284,28 @@
 
   .rightContainer {
     width: 100%;
+    padding-inline: 20px;
   }
 
-  .resumeLink {
-    font-size: 14px;
+  .resumeLink, .customBullets, .technologies {
+    font-size: 12px;
+  }
+
+  .contentText {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .workContainer {
+    display: grid;
+  }
+
+  .cardContainer {
+    grid-template-columns: auto;   
   }
 
   .cardTitle {
     font-size: 17px;
   }
-
-  .technologies {
-    font-size: 12px;
-  }
 }
 
-@media (max-width: 600px) {
-  .contentText {
-    font-size: 12px;
-  }
-}
